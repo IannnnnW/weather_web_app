@@ -24,5 +24,6 @@ document.getElementById('w-change-btn').addEventListener('click', (e) => {
 function getWeather(){
 condition.location()
 .then(data => condition.weatherCondition(data[0].lat, data[0].lon))
-.then(data => ui.paint(data));
+.then(data => ui.paint(data))
+.catch(error => console.log(error));
 }
