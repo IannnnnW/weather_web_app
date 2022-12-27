@@ -15,7 +15,7 @@ class UI{
         this.humidity.textContent = `Relative Humidity: ${condition.main.humidity}%`;
         this.feelsLike.textContent = `Feels Like: ${condition.main.feels_like}`
         this.temp.textContent = `Temperature: ${condition.main.temp} F`;
-        this.icon.setAttribute('src', "http://openweathermap.org/img/w/"+condition.weather[0].icon+".png");
+        this.icon.setAttribute('src', "https://openweathermap.org/img/w/"+condition.weather[0].icon+".png");
         this.wind.textContent = `Wind Speed: ${condition.wind.speed} km/h`;
     }
     toTitleCase(str) {
